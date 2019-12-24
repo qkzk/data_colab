@@ -108,7 +108,9 @@ L'objectif du TP est de programmer en Python plusieurs fonctions qui résolvent 
 * Vous disposez de plusieurs fonctions qui vous seront utiles dans le fichier `TSP_biblio.py`. Télechargez le.
 * La liste des ville de la tournée est disponible dans le fichier `exemple.py`. Télechargez le.
 * Créez un fichier `tsp.py` dans votre dossier. Vous travaillerez localement avec Thonny.
-* **Vous rendrez votre travail via "rendre le devoir" de Classroom, comme d'habitude. Tout ce que vous avez à rendre est votre fichier `tsp.py`**
+* **Vous rendrez votre travail via "rendre le devoir" de Classroom, comme d'habitude.**
+
+    **Tout ce que vous avez à rendre est votre fichier `tsp.py`**
 
 Lors de l'exécution de votre fichier, deux résultats sont attendus :
 
