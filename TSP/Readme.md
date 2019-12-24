@@ -1,5 +1,7 @@
 # TSP - Le voyageur de commerce
 
+**[Consignes précises disponibles à la fin du TP](https://github.com/qkzk/data_colab/tree/master/TSP#consignes-pr%C3%A9cises)**
+
 Le problème du voyageur de commerce - _Traveling Salesman Problem_
 TSP -, étudié depuis le 19e siècle, est l’un des plus connus dans le domaine de la recherche opérationnelle. William Rowan Hamilton a posé pour la première fois ce problème sous forme de jeu dès 1859.
 
@@ -106,7 +108,7 @@ L'objectif du TP est de programmer en Python plusieurs fonctions qui résolvent 
 * Vous disposez de plusieurs fonctions qui vous seront utiles dans le fichier `TSP_biblio.py`. Télechargez le.
 * La liste des ville de la tournée est disponible dans le fichier `exemple.py`. Télechargez le.
 * Créez un fichier `tsp.py` dans votre dossier. Vous travaillerez localement avec Thonny.
-* Vous rendrez votre travail via "rendre le devoir" de Classroom, comme d'habitude. Tout ce que vous avez à rendre est votre fichier `tsp.py`
+* **Vous rendrez votre travail via "rendre le devoir" de Classroom, comme d'habitude. Tout ce que vous avez à rendre est votre fichier `tsp.py`**
 
 Lors de l'exécution de votre fichier, deux résultats sont attendus :
 
@@ -147,7 +149,7 @@ Ce n'est donc pas un TP difficile.
 
 ## Compléments
 
-Un collègue de Douai a réalisé un [TP plus approfondi](tour_de_France_d_Alice) portant sur le même thème, 
+Un collègue de Douai a réalisé un [TP plus approfondi](tour_de_France_d_Alice) portant sur le même thème,
 je l'ai joint aux sources.
 
 Il peut constituer un projet de fin d'année puisqu'il recouvre une grande partie
