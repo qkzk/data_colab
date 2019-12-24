@@ -156,3 +156,10 @@ je l'ai joint aux sources.
 
 Il peut constituer un projet de fin d'année puisqu'il recouvre une grande partie
 des champs du programme.
+
+
+## Remarque finale : pourquoi Github ?
+
+1. C'est 100 fois plus facile pour moi d'y créer un travail,
+2. Git est l'outil que tous les développeurs utilisent, et donc vous l'utiliserez,
+3. Parce qu'il faut bien tester en vue de la terminale, pour l'instant on se contente de récupérer l'énoncé sur github. Je compte ensuite vous apprendre à publier sur github.
