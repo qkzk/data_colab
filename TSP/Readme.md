@@ -1,4 +1,4 @@
-# TSP - Le voyageur de commerce 
+# TSP - Le voyageur de commerce
 
 Le problème du voyageur de commerce - _Traveling Salesman Problem_
 TSP -, étudié depuis le 19e siècle, est l’un des plus connus dans le domaine de la recherche opérationnelle. William Rowan Hamilton a posé pour la première fois ce problème sous forme de jeu dès 1859.
@@ -28,14 +28,14 @@ connu. \
 
 ## Heuristique gloutone
 
-L'objectif de ce TP est de réaliser un algorithme glouton pour résoudre le TSP. 
+L'objectif de ce TP est de réaliser un algorithme glouton pour résoudre le TSP.
 
 Pour cela vous avez à votre disposition :
 
 - un jeu de données [exemple.txt](exemple.txt)  contenant les
   coordonnées de différentes villes à raison d'une par ligne sous la
   forme `nom_de_la_ville latitude longitude`, vous pouvez bien sur
-  l'étendre ou en générer un nouveau avec vos propres villes. 
+  l'étendre ou en générer un nouveau avec vos propres villes.
 
   Par exemple
 
@@ -96,3 +96,59 @@ Afin de créer l'algorithme glouton pour résoudre le problème du TSP, nous all
    1. réaliser une fonction qui génère une matrice qui stocke les distances 2 à 2 entre toutes les villes afin de ne faire le calcul de distance qu'une seule fois.
    2. réaliser une fonction qui retourne l'indice de la ville la plus proche étant donnée une ville, une liste de ville sous forme d'indice, une matrice de distance.
    3. réaliser l'heuristique gloutonne donnant le tour parcouru par le voyageur de commerce à partir d'une ville donnée en paramètre, la liste des villes et la matrice de distance ville à ville (on passera par un système d'indice).
+
+---
+
+## Consignes précises
+
+L'objectif du TP est de programmer en Python plusieurs fonctions qui résolvent le problème du voyageur de commerce.
+
+* Vous disposez de plusieurs fonctions qui vous seront utiles dans le fichier `TSP_biblio.py`. Télechargez le.
+* La liste des ville de la tournée est disponible dans le fichier `exemple.py`. Télechargez le.
+* Créez un fichier `tsp.py` dans votre dossier. Vous travaillerez localement avec Thonny.
+* Vous rendrez votre travail via "rendre le devoir" de Classroom, comme d'habitude. Tout ce que vous avez à rendre est votre fichier `tsp.py`
+
+Lors de l'exécution de votre fichier, deux résultats sont attendus :
+
+1. l'affichage dans la console du parcours réalisé par le voyageur de commerce.
+2. l'affichage graphique du parcours (similaire à celui présenté plus haut) de votre parcours.
+
+## Étapes et conseils
+
+Vous pouvez résoudre le problème en seulement 4 fonctions et 30 lignes de code.
+Ce n'est donc pas un TP difficile.
+
+1. Commencez par générer la matrice des distances entre les villes. Une ligne par ville, une colonne par ville, chaque cellule est la distance qui les sépare.
+2. Quelle heuristique allez-vous choisir ?
+
+    _**Heuristique** : Méthode de calcul qui fournit rapidement une solution réalisable, pas nécessairement optimale ou exacte, pour un problème d'optimisation difficile._
+3. Ensuite créez une fonction qui vérifie la signature suivante :
+
+    ~~~python
+    def indice_distance_min(ville, liste_ville, distances):
+        '''
+        Retourne l'indice de la ville la plus proche étant
+        donnée une ville, une liste de ville sous forme d'indice, une matrice de
+        distance.
+
+        :param ville: (int) indice d'une ville
+        :param liste_ville: (list) liste d'indice des ville
+        :param (distance):  (list of list of float) matrice des distances
+        :return: (int) l'indice de la ville la plus proche parmi ceux de la liste
+        '''
+        pass
+    ~~~
+4. La dernière fonction génère le parcours depuis une ville donnée et le fichier
+  contenant leurs position.
+
+  Sa sortie doit correspondre à ce que la fonction `trace` du module `TSP_biblio.py`
+  prend en paramètre.
+
+
+## Compléments
+
+Un collègue de Douai a réalisé un [TP plus approfondi](tour_de_France_d_Alice) portant sur le même thème, 
+je l'ai joint aux sources.
+
+Il peut constituer un projet de fin d'année puisqu'il recouvre une grande partie
+des champs du programme.
