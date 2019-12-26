@@ -27,7 +27,7 @@ des caractéristiques différentes :
 -   Un entier indiquant la génération du pokemon (`generation`)
 -   Un booléen indiquant si le pokemon est légendaire ou non (`is_legendary`)
 
-Ces données proviennent du jeu Pokemon Go. Les pokemons sont consignés dans des fichiers `csv`. 
+Ces données proviennent du jeu Pokemon Go. Les pokemons sont consignés dans des fichiers `csv`.
 Ces fichiers contiennent les données sous forme de table :
 
 
@@ -58,7 +58,7 @@ Ces fichiers contiennent les données sous forme de table :
 
 Dans ce TP, on cherche à répondre à cette question :
 
-Étant données les caractéristiques d'un pokemon dont on ne sait s'il est légendaire ou non, 
+Étant données les caractéristiques d'un pokemon dont on ne sait s'il est légendaire ou non,
 peut-on prédire si ce pokemon est légendaire ou non ?
 
 
@@ -82,7 +82,7 @@ Le fichier [`pokemon_squel.py`](pokemon_squel.py) contient :
 -   la définition du type  `Pokemon` ,
 -   la fonction `read_pokemon_csv` permettant de lire le fichier de données.
 -   la fonction `split_pokmeons` permettant de séparer l'ensemble des données en deux sous-ensembles.
--   la fonction `min_max_values` permettant de calculer les valeurs minimales et maximale d'un attribut numérique d'une liste 
+-   la fonction `min_max_values` permettant de calculer les valeurs minimales et maximale d'un attribut numérique d'une liste
     de pokemons.
 -   les fonctions  `pokemon_euclidian_distance` (à compléter) et `pokemon_manhattan_distance` permettant de calculer
     la distance entre deux pokemons. Pour des questions de normalisation, ces méthodes prennent également en paramètre un dictionnaire
@@ -93,28 +93,28 @@ Le fichier [`pokemon_squel.py`](pokemon_squel.py) contient :
 
 Le fichier [`knn_pokemon_squel.py`](knn_pokemon_squel.py) contient les
 en-têtes des fonctions nécessaires à l'implémentation de l'algorithme
-des $`k`$ plus proches voisins (`knn`).
+des `k` plus proches voisins (`knn`).
 
 
 # Travail à réaliser
 
--   Renommer le fichier `pokemon_squel.py` fourni en `pokemon.py`, puis compléter la fonction de 
+-   Renommer le fichier `pokemon_squel.py` fourni en `pokemon.py`, puis compléter la fonction de
     distance `pokemon_euclidian_distance`. Les attributs utilisés pour calculer la distance sont
-    fournis dans la variable `POKE_PROP_USED_FOR_DISTANCE`. 
+    fournis dans la variable `POKE_PROP_USED_FOR_DISTANCE`.
 -   Renommer le fichier `knn_pokemon_squel.py` fourni en `knn_pokemon.py`, puis compléter les fonctions :
--   `nearest_neighbors` : renvoie la liste des $`k`$ plus proches pokemons.   
-	Vous pourrez par exemple construire la liste des couples $(distance, voisin)$, puis la trier selon la première clé.
+-   `nearest_neighbors` : renvoie la liste des `k` plus proches pokemons.
+	Vous pourrez par exemple construire la liste des couples `(distance, voisin)`, puis la trier selon la première clé.
 -   `knn` : effectue la prédiction de l'attribut en déterminant l'attribut majoritaire dans le voisinage.
 -   Utiliser les fonctions précédentes pour compléter le tableau suivant :
-    
-| Fichier                | Meilleur $`k`$ pour la distance euclidienne | Meilleur $`k`$ pour la distance de Manhattan |
+
+| Fichier                | Meilleur `k` pour la distance euclidienne   | Meilleur `k` pour la distance de Manhattan   |
 |------------------------|---------------------------------------------|----------------------------------------------|
 | `pokemon_test.csv`     |                                             |                                              |
 | `pokemon_suspect1.csv` |                                             |                                              |
 | `pokemon_suspect2.csv` |                                             |                                              |
-    
-**Méthodologie :** 
-    
+
+**Méthodologie :**
+
 On charge les quatre jeux de données :
 
 ```python
@@ -123,14 +123,14 @@ test = read_pokemon_csv('pokemon_test.csv')
 suspect1 = read_pokemon_csv('pokemon_suspect1.csv')
 suspect2 = read_pokemon_csv('pokemon_suspect2.csv')
 ````
-	
-- Première ligne du tableau : utiliser la fonction `knn_data` avec `train` et `test` pour estimer les meilleurs $`k`$. : 
+
+- Première ligne du tableau : utiliser la fonction `knn_data` avec `train` et `test` pour estimer les meilleurs `k`. :
 
     ```python
     [ knn_data(test, train, k , ...) for k in range(5, 20) ]
 	```
-	
-- Deuxième ligne du tableau : 
+
+- Deuxième ligne du tableau :
   - Utiliser la fonction `knn_data` avec `suspect1` et `test`.
   - Que constate-t-on ? Pourquoi ?
 - Troisième ligne du tableau :
@@ -143,10 +143,9 @@ suspect2 = read_pokemon_csv('pokemon_suspect2.csv')
 
 # Pour aller plus loin
 
--   Ajouter d'autres attributs dans le calcul de la distance. Constatez que cela peut dégrader le 
+-   Ajouter d'autres attributs dans le calcul de la distance. Constatez que cela peut dégrader le
     résultat.
 -   Déterminer les pokemons mal classés, découvrir pourquoi.
--   Modifier la méthode de vote dans la fonction `knn` pour que les voisins les plus proches 
+-   Modifier la méthode de vote dans la fonction `knn` pour que les voisins les plus proches
     aient davantage de poids.
 -   Modifier la fonction de distance en attribuant un poids à chaque attribut.
-
