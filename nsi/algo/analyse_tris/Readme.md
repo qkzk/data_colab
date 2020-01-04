@@ -164,7 +164,7 @@ On est maintenant en capacité de produire une courbe pour chaque tri.
 * Observer les courbes obtenues et discuter des différences entre celles-ci.
 
 
-# Pour la prochaine fois (17 juin)
+# Complément
 
 L'objectif est de produire le matériel permettant la préparation d'une séance sur l'analyse des temps d'exécution des différents tris.
 
@@ -180,7 +180,3 @@ L'objectif est de produire le matériel permettant la préparation d'une séance
 
 * Produire les mêmes courbes pour la méthode `sort` de Python.
 * En comparant les courbes obtenues avec celles obtenues pour les quatre algorithmes étudiés, le(s)quel(s) pourrai(en)t être celui implantant la méthode `sort` ?
-
-## Séance sur les temps d'exécution des tris
-
-* Réfléchir au déroulement d'une séance face aux élèves pour introduire la notion de temps d'exécution de différents algorithmes avec illustration sur les algorithmes de tri.
