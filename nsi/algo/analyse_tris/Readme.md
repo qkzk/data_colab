@@ -7,7 +7,7 @@ Les objectifs de ce TP sont de :
   * tri rapide
   * tri fusion
 * produire des courbes de temps en fonction de la taille des listes à trier
-* observer ces courbes et tirer des conclusions sur la vitesse d'exécution des différents tris 
+* observer ces courbes et tirer des conclusions sur la vitesse d'exécution des différents tris
 
 
 ## Mener une campagne d'expérimentation
@@ -19,7 +19,7 @@ l'exécution de chacun des tris pour ces listes.
 Afin de mesurer l'évolution du temps d'exécution en fonction de la
 longueur des listes à trier, nous allons procéder à des
 expérimentations pour des listes de taille différentes, et observer
-l'évolution du temps d'exécution. 
+l'évolution du temps d'exécution.
 
 Des questions se posent sur la manière de mener cette campagne :
 * sur quel intervalle faut-il faire varier la taille des listes ?
@@ -34,15 +34,19 @@ Des questions se posent sur la manière de mener cette campagne :
 
 ### Module avec les tris
 
-Le module `tris` propose un prédicat 
+Le module `tris` propose un prédicat
 * `est_trie`
+
 quatre fonctions de tri
 * `tri_select`
 * `tri_insert`
 * `tri_rapide`
 * `tri_fusion`
+
 et une fonction
 * `compare`
+
+
 de comparaison utilisée par les fonctions de tri.
 
 ### Générateur de listes
@@ -68,13 +72,13 @@ fonction `timeit` qui accepte en entrée trois paramètres :
   permettre l'exécution correcte de la fonction (y compris donc le
   module qui contient la fonction à mesurer),
 * `stmt` – pour _statement_, instruction en anglais – est l'appel de
-  fonction qui sera mesurée (donc avec ses paramètres), 
+  fonction qui sera mesurée (donc avec ses paramètres),
 * `number` est le nombre de fois où l'instruction `stmt` sera
   exécutée. Le temps mesuré sera le temps cumulé pour toutes ces
-  exécutions. 
+  exécutions.
 
 Remarquez que le code Python des deux parmaètres `setup`et `stmt` sont
-donnés sous forme d'une chaîne de caractères. 
+donnés sous forme d'une chaîne de caractères.
 
 
 Par exemple, après avoir importé le module `timeit` :
@@ -102,7 +106,7 @@ Le résultat obtenu représente le temps total mis pour exécuter 100 fois `tri_
   mesure de temps pour des listes de toutes les longueurs comprises
   entre 1 et cette valeur maximale. Le premier élément est le temps
   pour des listes de taille 1, le deuxième pour des listes de taille
-  2, etc. 
+  2, etc.
 
 ### Tracer des courbes
 
@@ -119,8 +123,8 @@ pylab.plot(l)
 pylab.show()
 ```
 
-*Remarque :* en général, la méthode `show` de `pylab` ouvre une fenêtre pour présenter le graphique obtenu, et elle est bloquante, i.e. elle ne permet plus de dialoguer 
-avec l'interpréteur Python. Il faut fermer cette fenêtre pour pouvoir poursuivre le dialogue. Avant la fermeture de cette fenêtre, certaines actions sont possibles sur 
+*Remarque :* en général, la méthode `show` de `pylab` ouvre une fenêtre pour présenter le graphique obtenu, et elle est bloquante, i.e. elle ne permet plus de dialoguer
+avec l'interpréteur Python. Il faut fermer cette fenêtre pour pouvoir poursuivre le dialogue. Avant la fermeture de cette fenêtre, certaines actions sont possibles sur
 le graphique. L'une d'elles est la sauvegarde du graphique dans un fichier image.
 
 
@@ -162,7 +166,7 @@ On est maintenant en capacité de produire une courbe pour chaque tri.
 
 # Pour la prochaine fois (17 juin)
 
-L'objectif est de produire le matériel permettant la préparation d'une séance sur l'analyse des temps d'exécution des différents tris. 
+L'objectif est de produire le matériel permettant la préparation d'une séance sur l'analyse des temps d'exécution des différents tris.
 
 ## Courbes de temps pour les listes triées dans l'ordre croissant
 
@@ -180,18 +184,3 @@ L'objectif est de produire le matériel permettant la préparation d'une séance
 ## Séance sur les temps d'exécution des tris
 
 * Réfléchir au déroulement d'une séance face aux élèves pour introduire la notion de temps d'exécution de différents algorithmes avec illustration sur les algorithmes de tri.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
