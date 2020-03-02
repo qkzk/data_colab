@@ -11,7 +11,7 @@ Le problème du TSP sous sa forme la plus classique est le suivant : « Un voyag
 
 Les domaines d’application sont nombreux : problèmes de logistique, de transport aussi bien de marchandises que de personnes, et plus largement toutes sortes de problèmes d’ordonnancement. Certains problèmes rencontrés dans l’industrie se modélisent sous la forme d’un problème de voyageur de commerce, comme l’optimisation de trajectoires de machines outils : comment percer plusieurs points sur une carte électronique le plus vite possible ?
 
-Pour un ensemble de `n` points, il existe au total `n!` chemins
+Pour un ensemble de `n` points, il existe au total `n! = 1*2*3*...*n` chemins
 possibles. Le point de départ ne changeant pas la longueur du chemin,
 on peut choisir celui-ci de façon arbitraire, on a ainsi `(n-1)!`
 chemins différents. Enfin, chaque chemin pouvant être parcouru dans
