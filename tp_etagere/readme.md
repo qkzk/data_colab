@@ -6,10 +6,11 @@ date: 2020/03/07
 
 # Le problème des étagères
 
+**Consigne**
 
 La bibliothèque prévoit de refaire ses étagères. Elle comprend une collection de
-n livres `b1,b2,... ,bn`. Chaque livre `bi` a une largeur `wi`.
-Les livres doivent être rangés dans l’ordre fixé (par valeur de i croissante)
+`n` livres `b1,b2,... ,bn`. Chaque livre `bi` a une largeur `wi`.
+Les livres doivent être rangés dans l’ordre fixé (par valeur de `i` croissante)
 sur des étagères de largueur `L`.
 
 ## À faire 1

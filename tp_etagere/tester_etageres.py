@@ -1,5 +1,4 @@
-# from etageres import *
-from etageres_correction import *
+from etageres import *
 
 
 def tester_tout():
