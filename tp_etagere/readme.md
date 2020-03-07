@@ -70,7 +70,7 @@ etageres = [
 
 ## À faire 3
 
-1. Compléter la fonction fonction `ranger_livres`
+1. Compléter la fonction `ranger_livres`
 
     Elle prend en paramètres une liste de livres intitulée `livres`
     Elle retourne la double liste des étagères décrite plus haut.
