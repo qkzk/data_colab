@@ -63,7 +63,7 @@ Ainsi qu'on peut le voir, il y a un léger chevauchement des données.
 
 Dans l'ordre, voici les étapes à exécuter :
 
-1. récupérer tous le fichier zip et tout extraire dans un même dossier (depuis github, cliquer dessus, download)
+1. récupérer tous le fichier [crocos.zip](crocos.zip) et tout extraire dans un même dossier (depuis github, cliquer dessus, download)
 2. (optionnel) exécuter le fichier [generer_donnees](generer_donnees.py)
 
     Il va modifier le contenu du fichier csv.
