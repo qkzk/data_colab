@@ -83,7 +83,7 @@ def creer_animaux(nombre=100):
     return animaux
 
 
-def creer_csv(animaux):
+def creer_csv(animaux, fichier=None):
     '''
     Enregistre une liste d'animaux dans un dictionnaire
     Chaque animal est présenté par un dictionnaire, on les enregistre
@@ -92,7 +92,9 @@ def creer_csv(animaux):
     @param animaux: (list of dict) chaque animal doit respecter les contraintes
     @SE. écrit dans le fichier "crocos.csv"
     '''
-    with open(FICHIER, 'w', newline='') as csvfile:
+    if fichier=None:
+        fichier = FICHIER
+    with open(fichier, 'w', newline='') as csvfile:
         champs = ['taille', 'gueule', 'espece']
         csvwriter = csv.writer(csvfile, delimiter=',')
         csvwriter = csv.DictWriter(csvfile, fieldnames=champs)
