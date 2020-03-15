@@ -70,10 +70,7 @@ def choisir_classe_majoritaire(inconnu, entrainement, k):
 
 def vote_majoritaire(votes):
     '''
-    Choisit parmi tous les votes des voisins, celui majoritaire
-
-    @param votes: (list of str) ['crocodile', 'alligator', 'crocodile']
-    @return: (str) crocodile ou alligator
+    DOC À COMPLÉTER
     '''
     nb_vote_crocos = sum([1 for vote in votes if vote == "crocodile"])
     nb_vote_alligators = sum([1 for vote in votes if vote == "alligator"])
@@ -98,12 +95,7 @@ def appliquer_knn(test, entrainement, k):
 
 def calculer_precision(test):
     '''
-    Mesure la précision de l'algorithme des k plus proches voisins
-    sur un jeu de données de test (déjà traité)
-
-    @param test: (list of dict) le jeu de test doit déjà avoir été traité
-        par 'appliquer_knn'
-    @return: (float) entre 0 et 1, la precision.
+    DOC À COMPLÉTER
     '''
     total = len(test)
     bons_votes = sum([1 for animal in test if animal["espece"] == animal["vote"]])

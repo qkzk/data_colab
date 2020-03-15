@@ -17,8 +17,9 @@ from generer_donnees import *
 
 def charger_donnees(fichier=None):
     '''
-    Charge les données depuis un fichier csv
-    @param fichier: (str) le chemin vers un fichier csv
+    DOC À COMPLÉTER
+
+
     @return: (list of dict) les données, converties en flottants si possible
     '''
     animaux = []

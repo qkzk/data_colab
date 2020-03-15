@@ -38,7 +38,7 @@ FICHIER = "./crocos.csv"
 CHAMPS = ["espece", "taille", "gueule"]
 
 
-def tirer_dimension_hasard(espece, mesure):
+def tirer_mesure_hasard(espece, mesure):
     '''
     retourne une dimension aléatoire entre les bornes indiquées
     dans le dictionnaire DIMENSION_ANIMAUX
@@ -73,8 +73,8 @@ def creer_animal():
         * gueuel: float
     '''
     espece = titer_espece_hasard()
-    taille = tirer_dimension_hasard(espece, 'taille')
-    gueule = tirer_dimension_hasard(espece, 'gueule')
+    taille = tirer_mesure_hasard(espece, 'taille')
+    gueule = tirer_mesure_hasard(espece, 'gueule')
 
     animal = {
         "taille": taille,
