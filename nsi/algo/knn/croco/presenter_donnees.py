@@ -16,6 +16,11 @@ from generer_donnees import *
 
 
 def charger_donnees(fichier=None):
+    '''
+    Charge les données depuis un fichier csv
+    @param fichier: (str) le chemin vers un fichier csv
+    @return: (list of dict) les données, converties en flottants si possible
+    '''
     animaux = []
     if fichier is None:
         fichier = FICHIER
@@ -31,7 +36,12 @@ def charger_donnees(fichier=None):
     return animaux
 
 
-def presenter(animaux):
+def presenter_donnees(animaux):
+    '''
+    Construit un graphique des données de départ, pour illustrer
+    @param animaux: (list of dict) les reptiles
+    @SE: dessine un graphique
+    '''
     crocos = [animal for animal in animaux
               if animal['espece'] == "crocodile"]
     alligators = [animal for animal in animaux
@@ -56,8 +66,11 @@ def presenter(animaux):
 
 
 def main():
+    '''
+    Pilote le chargement
+    '''
     animaux = charger_donnees()
-    presenter(animaux)
+    presenter_donnees(animaux)
 
 if __name__ == '__main__':
     main()

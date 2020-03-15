@@ -22,16 +22,18 @@ import csv
 import random
 from pprint import pprint
 
+
 DIMENSION_ANIMAUX = {
     "crocodile": {
         "taille": (3.5, 5.8),
-        "gueule": (0.3, 0.5)
+        "gueule": (0.25, 0.5)
     },
     "alligator": {
-        "taille": (2, 3.4),
-        "gueule": (0.2, 0.3)
+        "taille": (2, 4),
+        "gueule": (0.15, 0.3)
     }
 }
+
 FICHIER = "./crocos.csv"
 CHAMPS = ["espece", "taille", "gueule"]
 
