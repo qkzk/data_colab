@@ -53,7 +53,7 @@ def tirer_mesure_hasard(espece, mesure):
 
 def titer_espece_hasard():
     '''
-    retourne une espece au hasard
+    DOC À COMPLETER
     '''
     if random.random() < 0.5:
         espece = 'crocodile'
