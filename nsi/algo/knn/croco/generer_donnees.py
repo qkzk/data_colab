@@ -33,6 +33,7 @@ DIMENSION_ANIMAUX = {
     }
 }
 FICHIER = "./crocos.csv"
+CHAMPS = ["espece", "taille", "gueule"]
 
 
 def tirer_dimension_hasard(espece, mesure):
@@ -48,6 +49,17 @@ def tirer_dimension_hasard(espece, mesure):
     return round(random.uniform(*DIMENSION_ANIMAUX[espece][mesure]), 2)
 
 
+def titer_espece_hasard():
+    '''
+    retourne une espece au hasard
+    '''
+    if random.random() < 0.5:
+        espece = 'crocodile'
+    else:
+        espece = 'alligator'
+    return espece
+
+
 def creer_animal():
     '''
     Crée un animal au hasard. Une chance sur deux (random() < 0.5) que ce
@@ -58,13 +70,13 @@ def creer_animal():
         * taille: float
         * gueuel: float
     '''
-    if random.random() < 0.5:
-        espece = 'crocodile'
-    else:
-        espece = 'alligator'
+    espece = titer_espece_hasard()
+    taille = tirer_dimension_hasard(espece, 'taille')
+    gueule = tirer_dimension_hasard(espece, 'gueule')
+
     animal = {
-        "taille": tirer_dimension_hasard(espece, 'taille'),
-        "gueule": tirer_dimension_hasard(espece, 'gueule'),
+        "taille": taille,
+        "gueule": gueule,
         "espece": espece,
     }
     return animal
