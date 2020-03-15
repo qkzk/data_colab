@@ -92,7 +92,7 @@ def creer_csv(animaux, fichier=None):
     @param animaux: (list of dict) chaque animal doit respecter les contraintes
     @SE. écrit dans le fichier "crocos.csv"
     '''
-    if fichier=None:
+    if fichier is None:
         fichier = FICHIER
     with open(fichier, 'w', newline='') as csvfile:
         champs = ['taille', 'gueule', 'espece']
