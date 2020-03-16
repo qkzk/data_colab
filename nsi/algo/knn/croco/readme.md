@@ -15,8 +15,8 @@ On utilise seulement deux critères très simples :
 * la taille de sa gueule
 
 L'exemple est volontairement limité à deux caractéristiques afin de pouvoir
-les présenter graphiquement. Dès qu'on dépasse deux, ça devient plus délicat
-et on voit moins bien.
+les présenter graphiquement dans un _plan_. Au delà de deux caractéristiques,
+il faut utiliser plusieurs graphiques et c'est nettement moins lisible.
 
 Sur une figure, c'est simple, on voit nettement la démarcation.
 
@@ -29,7 +29,7 @@ Nous devrions donc parvenir à distinguer facilement et repérer nos erreurs.
 Toutes les données utilisées ici sont fictives. Je vous joint d'ailleurs
 le programme qui me sert à les générer.
 
-Il illustre le cours "donner en table, création d'une table"
+Il illustre le cours "donnée en table : création d'une table".
 
 ### Examen des données
 
@@ -82,7 +82,7 @@ Dans l'ordre, voici les étapes à exécuter :
 
     Espérons qu'elle soit proche de 1 !
 
-    Ensuite il dessine les résultats. Vous devriez obtenir un graphique similaire :
+    Ensuite il dessine les résultats. Vous devriez obtenir un graphique similaire à :
 
     ![resultat](resultat.png)
 
