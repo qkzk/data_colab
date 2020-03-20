@@ -6,6 +6,7 @@ Table des matières
     1.  [Fichiers csv](#fichiers-csv)
     2.  [Le module `pokemon.py`](#le-module-pokemonpy)
     3.  [Le module `knn_pokemon`](#le-module-knn_pokemon)
+    4.  [Tous les fichiers dans un zip](pokemon.zip)
 2.  [Travail à réaliser](#travail-à-réaliser)
 3.  [Pour aller plus loin](#pour-aller-plus-loin)
 
