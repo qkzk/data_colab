@@ -123,7 +123,7 @@ inscrit. Ces informations sont séparées par un point-virgule.
 Avec ces données vous allez construire des compétiteurs à l'aide de la
 fonction `Competitor.create`. Il vous faudra attribuer à chacun de ces
 compétiteurs un numéro de dossard, obtenu par simple incrémentation d'un
-compteur. 
+compteur.
 
 Tous les compétiteurs seront rassemblés dans un dictionnaire dont les clés seront les numéros de dossard et les valeurs les compétiteurs associés.
 
@@ -142,7 +142,7 @@ Vous pouvez envisager de gérer la situation où aucun fichier ne correspond au 
 **À faire**
 
 Testez la validité de votre fonction avec le fichier
-`data/small_inscrits.csv`. 
+`data/small_inscrits.csv`.
 Vérifiez par exemple la taille du dictionnaire obtenu, ainsi que le
 contenu de quelques éléments.
 
@@ -166,7 +166,7 @@ Les fonctions ont pour résultat soit une donnée de type `Competitor`, soit une
 **À faire**
 Écrivez une fonction `select_competitor_by_bib` qui a pour résultat le compétiteur dont le numéro de dossard est passé en paramètre.
 
-Comment proposez-vous de  gérer la situation où aucun compétiteur ne correspond au dossard fourni ? 
+Comment proposez-vous de  gérer la situation où aucun compétiteur ne correspond au dossard fourni ?
 
 *Suggestion* cela peut être l'occasion de tester la levée d'exception.
 
@@ -259,22 +259,23 @@ petit jeu de données.
 # Tris
 (manipulation du dictionnaire - suite)
 
+<!--
 Vous allez avoir l'occasion de réutiliser l'un des tris que vous avez
-réalisés dans le cadre des activités du bloc 2. 
+réalisés dans le cadre des activités du bloc 2.
 
 Récupérez le fichier contenant les fonctions de tris étudiées,
 faites votre choix d'une fonction parmi les tris étudiés et importez
-cette fonction.
+cette fonction. -->
 
+Vous allez avoir l'occasion de trier les compétiteurs selon un critère.
 
 **À faire**
 
 Sur le modèle des fonctions de comparaison que vous avez déjà
-rencontrées, complétez le module `Competitor` pour lui ajouter une
-fonction nommée `compare_lastname` qui définit une relation d'ordre
-sur les compétiteurs selon l'ordre alphabétique de leurs noms.
-
-Utilisez cette fonction pour définir une fonction `sort_competitors_by_lastname` qui prend en paramètre un dictionnaire de compétiteurs, comme défini précédemment, et a pour résultat la liste des compétiteurs triée par ordre alphabétique  de leurs noms.
+rencontrées, définissez une fonction `sort_competitors_by_lastname` qui
+prend en paramètre un dictionnaire de compétiteurs, comme défini
+précédemment, et a pour résultat la liste des compétiteurs triée
+par ordre alphabétique  de leurs noms.
 
 
 **À faire**
@@ -319,8 +320,8 @@ ordre de performance, on pourrait obtenir un affichage de la forme :
 [1]: Sidney Robert (M - 21/7/1970)       =>  1h 8mn55s
 [6]: Romaine Hughes (F - 17/10/1943)     =>  1h17mn 8s
 [3]: Vincent Riquier (M - 16/9/1980)     =>  1h21mn23s
-[9]: Avelaine CinqMars (F - 14/2/1983)   => 
-[2]: Paien Gilbert (M - 26/11/1953)      => 
+[9]: Avelaine CinqMars (F - 14/2/1983)   =>
+[2]: Paien Gilbert (M - 26/11/1953)      =>
 ```
 
 **À faire**
@@ -343,13 +344,13 @@ format CSV contenant
 
 -   les libellés en première ligne
 
-    ``` {.sourceCode .text}   
+    ``` {.sourceCode .text}
     Num_dossard;Prénom;Nom;Performance
     ```
 
 -   les résultats sur les lignes suivantes
 
-    ``` {.sourceCode .text}   
+    ``` {.sourceCode .text}
     7;Archard;Rivard; 0h46mn31s
     8;Cheney;Chassé; 0h48mn10s
     ...
@@ -380,18 +381,12 @@ un compétiteur. Le résultat de cette fonction est `True` si le
 compétiteur doit être sélectionné (on dit qu'il vérifie le prédicat)
 et `False` dans le cas contraire.
 
-
-**À faire**
-Lors de l'étude des tris vous avez vu, avec les fonctions de comparaison passées en paramètre des fonctions de tri, qu'une fonction pouvait être paramètre d'une fonction.
-En reprenant ce principe, définissez une fonction `select_competitor` dont le premier paramètre est un dictionnaire de compétiteurs et le second est une fonction prédicat.
-Le résultat de `select_competitor` est la liste des compétiteurs qui vérifient le prédicat.
-
 **À faire**
 Après avoir défini les prédicats qui conviennent proposez une seconde version des fonctions  `select_competitor_by_birth_year` et `select_competitor_by_name`.
 
-Définissez une prédicat qui vérifie si son paramètre de type `Competitor` est de sexe féminin, puis sans définir de nouvelle fonction produisez la liste des compétiteurs de sexe féminin.	
+Définissez une prédicat qui vérifie si son paramètre de type `Competitor` est de sexe féminin, puis sans définir de nouvelle fonction produisez la liste des compétiteurs de sexe féminin.
 
-**Encore un peu plus loin ?** (seulement si vous en avez envie)
+**Rappel : les fonctions lambda** (seulement si vous en avez envie)
 
 Python permet de définir des *fonctions anonymes* (comme en javascript si vous avez déjà réalisé cela). On parle de **lambda** ou *lambda expression* ou *lambda fonction*.
 Il s'agit, en Python, de fonction dont le corps est constitué d'une seule expression et pour lesquels le `return` est implicite.
@@ -417,7 +412,7 @@ Il est possible d'avoir plusieurs paramètres :
 
 Fondamentalement, les lambdas n'apportent rien de particulier par rapport aux fonctions définies par `def`. Leur intérêt réside principalement dans les situations où l'on souhaite passer une fonction comme paramètre sans avoir à définir une fonction nommée.
 
-Vous pouvez lire [cette page](https://book.pythontips.com/en/latest/map_filter.html) et en déduire comment vous pouvez utiliser les lambdas et la fonction `filter` pour écrire une troisième version des fonctions de sélection précédentes qui utilise `filter` 
+Vous pouvez lire [cette page](https://book.pythontips.com/en/latest/map_filter.html) et en déduire comment vous pouvez utiliser les lambdas et la fonction `filter` pour écrire une troisième version des fonctions de sélection précédentes qui utilise `filter`
 qui est de fait une fonction prédéfinie qui réalise le travail demandé.
 
 ## Pour les tris
