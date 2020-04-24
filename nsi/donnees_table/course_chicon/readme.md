@@ -414,17 +414,3 @@ Fondamentalement, les lambdas n'apportent rien de particulier par rapport aux fo
 
 Vous pouvez lire [cette page](https://book.pythontips.com/en/latest/map_filter.html) et en déduire comment vous pouvez utiliser les lambdas et la fonction `filter` pour écrire une troisième version des fonctions de sélection précédentes qui utilise `filter`
 qui est de fait une fonction prédéfinie qui réalise le travail demandé.
-
-## Pour les tris
-
-
-**Allons un peu plus loin** (une nouvelle fois)
-
-Selon le même principe que pour la sélection on peut constater des similitudes dans les deux fonctions de tris (`sort_competitors_by_lastname` et `sort_competitors_by_performance`) étudiées dans le sujet.
-Déduisez en la définition d'une fonction qui prend en paramètre le dictionnaire et la fonction de comparaison pour produire la liste de compétiteurs triée selon la relation d'ordre.
-
-**Et toujours pour aller un peu plus loin**
-
-Il est possible d'utiliser la fonction prédéfinie `list.sort` (cf. [doc python](https://docs.python.org/fr/3.7/library/stdtypes.html#list.sort)).
-Il est alors certainement intéressant de consulter au préalable le [Guide pour le tri](https://docs.python.org/fr/3.7/howto/sorting.html).
-C'est l'occasion de  rencontrer à nouveau une situation où les lambdas peuvent être utilisées.
